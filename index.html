@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bc3854343b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>test</title>
+</head>
+<body onload="listerUser()">
+    <div class="Table">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Date de création</th>
+                    <th>Etat</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Nom d'utilisateur</th>
+                    <th>Matricule</th>
+                    <th>Action</th>
+
+                    
+                </tr>
+            </thead>
+            <tbody id="tbody"> 
+            </tbody>
+            
+            
+        </table>
+    </div>
+    <div class="btn-add">
+        <button onclick="add()">AJouter utilisateur</button>
+    </div>
+    <div class="modal" id="modal">
+
+    
+    <div class="form-add">
+        <div>
+            <h1>Ajout d'utilisateur</h1>
+        </div>
+        
+        <div class="col">
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom">
+            </div>
+            <div>
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom">
+            </div>
+            <div>
+                <label for="etat">Etat</label>
+                <select  id="etat">
+                    <option value="En validation">En validation</option>
+                    <option value="Validé">Validé</option>
+                    <option value="Rejeté">Rejeté</option>
+                </select>
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <label for="nomUtilisateur">Nom d'utilisateur</label>
+                <input type="text" id="nomUtilisateur">
+            </div>
+            <div>
+                <label for="dateCreation">date de création</label>
+                <input type="date"" id="dateCreation">
+            </div>
+        </div>
+        <div class="col">
+            <div>
+                <label for="matricule">Matricule</label>
+                <input type="text"" id="matricule">
+            </div>
+        </div>
+        <div>
+            <button onclick="save()">Enregistrer</button>
+        </div>
+        
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
